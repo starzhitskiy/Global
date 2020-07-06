@@ -27,6 +27,7 @@ function buildHtml() {
 gulp.task('html', buildHtml);
 
 let isDev = false;
+
 let webPackConfig = {
 	output: {
 		filename: 'main.js'
@@ -82,6 +83,7 @@ function watch() {
 	gulp.watch('./src/**/*.html', buildHtml);
 }
 gulp.task('watch', watch);
+
 gulp.task(
 	'default',
 	gulp.series(
